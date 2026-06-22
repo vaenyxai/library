@@ -1,5 +1,31 @@
 {
   "schemaVersion": 1,
-  "methods": [],
-  "routines": []
+  "methods": [
+    {
+      "id": "note-tidier",
+      "name": "Note Tidier",
+      "description": "Turn a messy note into a clean title and a few bullet points.",
+      "version": "1.0.0",
+      "owner": "",
+      "tags": [
+        "notes",
+        "sample"
+      ]
+    }
+  ],
+  "routines": [
+    {
+      "id": "tidy-notes",
+      "name": "Tidy Notes",
+      "description": "Paste a messy note; get back a clean title and bullet points you can keep and revisit.",
+      "version": "1.0.0",
+      "owner": "",
+      "tags": [
+        "notes",
+        "sample"
+      ],
+      "mode": "one-shot",
+      "stepCount": 1
+    }
+  ]
 }

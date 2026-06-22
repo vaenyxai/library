@@ -1,0 +1,3 @@
+{
+  "permissions": { "network": false, "readFiles": false }
+}

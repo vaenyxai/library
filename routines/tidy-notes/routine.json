@@ -1,0 +1,11 @@
+{
+  "name": "Tidy Notes",
+  "description": "Paste a messy note; get back a clean title and bullet points you can keep and revisit.",
+  "owner": "",
+  "version": "1.0.0",
+  "tags": ["notes", "sample"],
+  "mode": "one-shot",
+  "storage": { "journal": true, "gallery": true },
+  "deps": [{ "methodId": "note-tidier", "version": "1.0.0" }],
+  "flow": [{ "id": "step1", "methodId": "note-tidier", "from": "journal" }]
+}

@@ -1,0 +1,21 @@
+{
+  "input": {
+    "type": "object",
+    "properties": {
+      "text": { "type": "string", "description": "The messy note to tidy." }
+    },
+    "required": ["text"]
+  },
+  "output": {
+    "type": "object",
+    "properties": {
+      "title": { "type": "string", "description": "A short title for the note." },
+      "points": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "The note as clean bullet points."
+      }
+    },
+    "required": ["title", "points"]
+  }
+}
