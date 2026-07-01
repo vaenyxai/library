@@ -1,6 +1,6 @@
-# Vanta Library Community
+# Vaenyx Library Community
 
-The shared warehouse of **Methods** and **Routines** for [Vanta](https://github.com/oskar617-cmyk/vanta-agent) — the self-hosted, local-first personal AI agent.
+The shared warehouse of **Methods** and **Routines** for [Vaenyx](https://github.com/oskar617-cmyk/vaenyx-agent) — the self-hosted, local-first personal AI agent.
 
 - **Method** = one small, reusable, **declarative** capability (a recipe + input/output schema + growing examples).
 - **Routine** = a user-facing product made of one or more Methods + declarative orchestration.
@@ -8,11 +8,11 @@ The shared warehouse of **Methods** and **Routines** for [Vanta](https://github.
 ## How it works
 
 ```
-This repo (definition)  →  Cloudflare (index.json, served)  →  the Vanta app (reads CF only)
+This repo (definition)  →  Cloudflare (index.json, served)  →  the Vaenyx app (reads CF only)
 ```
 
 - A GitHub Action rebuilds `index.json` (the catalogue the app searches) whenever `methods/` or `routines/` change.
-- The Vanta app reads the catalogue from **Cloudflare**, never from GitHub directly.
+- The Vaenyx app reads the catalogue from **Cloudflare**, never from GitHub directly.
 - Installing pulls just the one Routine you want (plus its Method dependencies) — never the whole repo.
 
 ## Layout
@@ -27,7 +27,7 @@ See [`methods/README.md`](methods/README.md) and [`routines/README.md`](routines
 
 ## Contributing
 
-- Most content is published from inside the Vanta app (the app commits on your behalf — you never touch Git).
+- Most content is published from inside the Vaenyx app (the app commits on your behalf — you never touch Git).
 - Direct contributors may open a Pull Request. Content is **declarative only** — no executable code — which is what makes an open, family-facing store safe.
 
 ## Safety

@@ -1,4 +1,4 @@
-// Build index.json — the catalogue the Vanta app searches.
+// Build index.json — the catalogue the Vaenyx app searches.
 //
 // Scans methods/ and routines/ for their identity files and emits one summary
 // list each (the cheap, browsable part). The app downloads this single file from

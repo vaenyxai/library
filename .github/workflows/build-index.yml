@@ -1,7 +1,7 @@
 name: Build index
 
 # Rebuild index.json whenever catalogue content changes, commit it back, then
-# assemble dist/ and deploy it to Cloudflare Pages (vanta-lib.pages.dev) so a
+# assemble dist/ and deploy it to Cloudflare Pages (vaenyx-lib.pages.dev) so a
 # published Method/Routine reaches the store automatically. The paths filter
 # excludes index.json itself (plus [skip ci]) so the commit cannot re-trigger this.
 # Linux-only, short timeout, cancel superseded runs.
@@ -34,8 +34,8 @@ jobs:
       - run: node scripts/build-index.mjs
       - name: Commit index.json
         run: |
-          git config user.name "vanta-lib-bot"
-          git config user.email "vanta-lib-bot@users.noreply.github.com"
+          git config user.name "vaenyx-lib-bot"
+          git config user.email "vaenyx-lib-bot@users.noreply.github.com"
           git add index.json
           if git diff --cached --quiet; then
             echo "index.json unchanged"
@@ -46,7 +46,7 @@ jobs:
       - name: Assemble dist
         run: node scripts/build-site.mjs
       - name: Deploy to Cloudflare Pages
-        run: npx wrangler@latest pages deploy dist --project-name=vanta-lib --branch=main
+        run: npx wrangler@latest pages deploy dist --project-name=vaenyx-lib --branch=main
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
