@@ -1,0 +1,31 @@
+{
+  "input": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["subject", "bodyText"],
+    "properties": {
+      "subject": { "type": "string" },
+      "from": { "type": "string", "description": "Sender name/email if available." },
+      "bodyText": { "type": "string", "description": "The email body as text (extracted locally)." },
+      "hasAttachments": { "type": "boolean" },
+      "attachmentNames": { "type": "array", "items": { "type": "string" } }
+    }
+  },
+  "output": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["type", "confidence", "reason"],
+    "properties": {
+      "type": {
+        "type": "string",
+        "enum": ["quote", "quote-questions", "job-related", "unrelated", "spam"]
+      },
+      "confidence": { "type": "string", "enum": ["low", "medium", "high"] },
+      "reason": { "type": "string", "description": "One short sentence on why." },
+      "suggestedFolder": {
+        "type": ["string", "null"],
+        "description": "For quote/job-related, a short inbox folder label; else null."
+      }
+    }
+  }
+}

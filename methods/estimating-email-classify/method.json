@@ -1,0 +1,11 @@
+{
+  "name": "Construction Quote Email Classifier",
+  "description": "Classifies one incoming construction email into a type for an estimator's inbox: a supplier quote, a supplier asking questions before quoting, other job-related mail, unrelated, or spam.",
+  "version": "1.0.0",
+  "tags": [
+    "email analysis",
+    "email classifier",
+    "estimating"
+  ],
+  "owner": "Oskar Lue"
+}
