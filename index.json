@@ -2,6 +2,18 @@
   "schemaVersion": 1,
   "methods": [
     {
+      "id": "estimating-email-classify",
+      "name": "Construction Quote Email Classifier",
+      "description": "Classifies one incoming construction email into a type for an estimator's inbox: a supplier quote, a supplier asking questions before quoting, other job-related mail, unrelated, or spam.",
+      "version": "1.0.0",
+      "owner": "Oskar Lue",
+      "tags": [
+        "email analysis",
+        "email classifier",
+        "estimating"
+      ]
+    },
+    {
       "id": "note-tidier",
       "name": "Note Tidier",
       "description": "Turn a messy note into a clean title and a few bullet points.",
