@@ -34,3 +34,13 @@ See [`methods/README.md`](methods/README.md) and [`routines/README.md`](routines
 
 - Trust binds to the exact **content hash** of each item (verified on-device), not to any badge.
 - Everything here is public; never put private data in a Method/Routine or its examples.
+
+## Report content / takedown
+
+Anyone — whether or not you use Vaenyx — can report content that is unsafe,
+infringing, misleading, defamatory, or contains personal information:
+**hello@vaenyx.ai**. Describe the material and where it appears rather than
+attaching it. (Reports are handled by email on overseas servers — include only
+what's needed.) Reported content is reviewed and, where warranted, removed from
+the Library and its index; copies already installed, and traces in this
+repository's public history, forks and mirrors, may persist.
