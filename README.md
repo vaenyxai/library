@@ -1,6 +1,6 @@
-# Vaenyx Library Community
+# Vaenyx Community
 
-The shared warehouse of **Methods** and **Routines** for [Vaenyx](https://github.com/oskar617-cmyk/vaenyx) — the self-hosted, local-first personal AI agent.
+The shared warehouse of **Methods** and **Routines** for [Vaenyx](https://github.com/vaenyxai/core) — the self-hosted, local-first personal AI agent. In the app this catalogue appears as the **Community** tab; what you install lands in your own on-device **Library**.
 
 - **Method** = one small, reusable, **declarative** capability (a recipe + input/output schema + growing examples).
 - **Routine** = a user-facing product made of one or more Methods + declarative orchestration.
